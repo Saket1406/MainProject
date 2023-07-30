@@ -5,10 +5,11 @@ import { store } from './app/store';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
+import thunk from "redux-thunk" 
+import { createStore, applyMiddleware } from 'react-redux';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
-
 root.render(
   <React.StrictMode>
     <Provider store={store}>
